@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
   <title>Join Our Newsletter | devChallenges.io</title>
   <style>
     * {
@@ -17,6 +19,85 @@
 
     body {
       height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Lexend", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      background-color: #F9FAFC;
+    }
+
+    .container {
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      /* background-color: #2a3f6a; */
+      padding: 17px;
+    }
+
+    .container h1 {
+      font-weight: 600;
+    }
+
+    .container p {
+      color: #787E8A;
+      max-width: 558px;
+      width: 100%;
+      text-align: center;
+      font-weight: normal;
+      line-height: 23px;
+    }
+
+    .container form {
+      width: 70%;
+      background-color: #FFFFFF;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 4px 8px 20px 0px rgba(85, 85, 85, 0.2);
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+    }
+
+    form input {
+      border-radius: 8px;
+      line-height: 40px;
+      text-align: center;
+      border: 2px solid #EAECEF;
+      font-size: 0.9em;
+      background-color: #F9FAFC;
+    }
+
+    form input:focus {
+      outline: none;
+    }
+
+    form input::placeholder {
+      color: #727070;
+      font-weight: 600;
+    }
+
+    form button {
+      border-radius: 8px;
+      line-height: 40px;
+      text-align: center;
+      border: none;
+      font-size: 0.9em;
+      background-color: #294CCE;
+      color: white;
+      cursor: pointer;
+    }
+
+    form label {
+      font-size: 0.8em;
+      color: #515151;
+      text-align: center;
     }
 
     .author-info {
@@ -33,20 +114,19 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="container">
     <img src="resources/logo.svg" alt="">
     <h1>Join our newsletter</h1>
 
     <p> Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every
       week,
       so stay tuned to snag the hottest items just for you.</p>
-    <form action="" method="post">
-      <label for="email">Enter your email address</label>
-      <input type="email" name="email-value" id="email">
+    <form action="#" method="post">
+      <input type="email" name="email-value" id="email" placeholder="Enter your email address">
       <button type="submit">Subscribe now</button>
       <label for="#"> Your email is 100% confidential and won’t send you any spam.</label>
     </form>
-  </div>
+  </main>
 
   <div class="author-info">
     Coded by <a href="https://www.github.com/att-avotra">Avotra</a> | Challenge by
