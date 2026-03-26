@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://join-our-newsletter-demo.netlify.app/">
+    <a href="https://news-letter-project-self.vercel.app">
       Demo
     </a>
     <span> | </span>
